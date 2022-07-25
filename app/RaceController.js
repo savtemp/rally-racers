@@ -5,7 +5,7 @@ function _drawRacers(){
     let racers = AppState.racers
     let template = ''
     racers.forEach(racer => template += racer.Template)
-    console.log(template);
+    // console.log(template);
     document.getElementById('racers').innerHTML = template
 }
 
@@ -13,7 +13,7 @@ function _moveRacers(){}
 
 export class RaceController{
     constructor(){
-        console.log("controller running");
+        // console.log("controller running");
         _drawRacers()
     }
 }

@@ -8,16 +8,20 @@ export class Racer{
 
     get Template(){
         return `
-        <div class="col-9 p-2">
+        <div class="col-10 p-2">
             <div class="row bg-dark text-light p-2 m-3">
-                <div class="col-12 fs-2"><span id="${this.number}"></span>${this.picture}</div>
+                <div class="col-12 fs-2"><span id="${this.number}%"></span>${this.picture}</div>
             </div>
         </div>
         `
     }
 
-    // Write go method = will randomly increase their distance up to but not above 95
+    // Write move method = will randomly increase racer distance up to but not above 95
     move(){
-        let move = [Math.floor(Math.random())] 
+        let move = this.distance
+        if(move <= Math.floor(Math.random() * 95)){
+            console.log(move);
+        }
+        
     }
 }

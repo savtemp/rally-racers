@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Rally Racers</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+
+  <body class="debug">
+    <header class="container-fluid">
+        <section class="row bg-dark text-light text-center p-2">
+            <div class="col-12">
+                <h2>Off To The Races</h2>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <section id="racers" class="row justify-content-center">
+            <div class="col-9 p-2">
+                <!-- <div class="row bg-dark text-light p-2 m-3">
+                    <div class="col-12 fs-2"><span id="1"></span>🦊</div>
+                </div>
+                <div class="row bg-dark text-light p-2 m-3">
+                    <div class="col-12 fs-2"><span id="2"></span>🐺</div>
+                </div>
+                <div class="row bg-dark text-light p-2 m-3">
+                    <div class="col-12 fs-2"><span id="3"></span>🐸</div>
+                </div>
+                <div class="row bg-dark text-light p-2 m-3">
+                    <div class="col-12 fs-2"><span id="4"></span>🐰</div>
+                </div> -->
+            </div>
+        </section>
+        
+        <section>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-success">Start</button>
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 fs-4">Winner:</div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="app/main.js" type="module"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
